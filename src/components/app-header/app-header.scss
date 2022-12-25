@@ -31,4 +31,9 @@
         margin-right: 35px;
         height: 35px;
     }
+
+    &:hover, &:focus {
+        color: $white;
+        text-decoration: underline;
+    }
 }
