@@ -1,0 +1,51 @@
+@import '../../main-styles/vars.scss';
+@import '../../main-styles/mixins.scss';
+
+.intro {
+    background: url(../../img/main.png) no-repeat;
+    background-size: cover;
+    color: $white;
+    height: 640px;
+
+   &__title{
+    @include flexible-font-size(28, 40);
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 0;
+
+   }
+
+   &__subtitle{
+    @include flexible-font-size(18, 24);
+    margin-bottom: 18px;
+   }
+
+   &__btn{
+    font-weight: 700;
+    @include flexible-font-size(12, 14);
+    padding: 5px 42px;
+   }
+}
+
+
+.ps{
+    margin: 15px 0 20px;
+
+
+     @media (min-width: $media-tab-lg) {
+         margin: 20px 0 35px;
+     }
+
+    &__img{
+        margin: 0 15px;
+
+        @media (min-width: $media-tab-lg) {
+          margin: 0 25px;
+        }
+    }
+
+    hr{
+     color: $white;
+     width: 60px;
+    }
+}
