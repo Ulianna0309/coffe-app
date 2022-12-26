@@ -3,37 +3,40 @@
 @import "~bootstrap/scss/bootstrap";
 
 
-.navbar-expand {
-    padding: 15px;
-    color: $white;
-    position: absolute;
-    width: 100%;
-    right: 0;
-    left: 0;
-
-    @media (min-width: $media-tab-lg) {
-        padding: 30px 15px;
-    }
-}
-
-.navbar-brand, .nav-link{
-    color: $white;
-    text-decoration: none;
-    font-weight: 400;
-    @include flexible-font-size(10, 12);
-    line-height: 120%;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-right: 10px;
-    height: 30px;
-    padding: 0;
-
-    @media (min-width: $media-tab-lg) {
-        margin-right: 35px;
-        height: 35px;
-    }
-
-    &:hover, &:focus {
+.header{
+    &.navbar-expand {
+        padding: 15px;
         color: $white;
-        text-decoration: underline;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        left: 0;
+
+        @media (min-width: $media-tab-lg) {
+            padding: 30px 15px;
+        }
+    }
+
+    .navbar-brand, .nav-link{
+        color: $white;
+        text-decoration: none;
+        font-weight: 400;
+        @include flexible-font-size(10, 12);
+        line-height: 120%;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-right: 10px;
+        height: 30px;
+        padding: 0;
+        cursor: pointer;
+
+        @media (min-width: $media-tab-lg) {
+            margin-right: 35px;
+            height: 35px;
+        }
+
+        &:hover, &:focus {
+            color: $white;
+            text-decoration: underline;
+        }
     }
 }

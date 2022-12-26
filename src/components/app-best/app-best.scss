@@ -1,0 +1,55 @@
+@import '../../main-styles/vars.scss';
+@import '../../main-styles/mixins.scss';
+
+.best {
+   padding: 40px 0;
+   background: url(../../img/best-bg.png) no-repeat;
+   background-size: cover;
+
+   @media (min-width: $media-tab-md) {
+    padding: 80px 0 100px;
+   }
+
+
+   &__title{
+    @include flexible-font-size(20, 24);
+    line-height: 120%;
+   }
+
+   &__cards{
+       max-width: 800px;
+       margin: 40px auto 0;
+
+       .card{
+           padding: 24px 20px;
+           background: rgba(255, 255, 255, 0.65);
+           border-radius: 8px;
+           max-width: 220px;
+           margin: 0 auto 20px;
+
+           @media (min-width: $media-tab-md) {
+             margin: 0;
+           }
+
+           &-img-top{
+               height: 130px;
+               max-width: 150px;
+               margin: 0 auto;
+           }
+
+           &-title{
+             @include flexible-font-size(12, 14);
+           }
+
+            &-body{
+                padding: 14px 0 0 0;
+            }
+
+            &-text{
+             @include flexible-font-size(12, 14);
+             font-weight: 700;
+             text-align: right;
+           }
+       }
+   }
+}

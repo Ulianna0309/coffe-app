@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const AppHeader = () => {
     return (
         <>
-            <Navbar>
+            <Navbar className="header">
                 <Container>
                     <Navbar.Brand href="#home" className="d-flex align-items-end">
                     <img

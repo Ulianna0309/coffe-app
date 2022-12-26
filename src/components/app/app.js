@@ -1,6 +1,9 @@
 import { Component } from 'react';
 import AppHeader from '../app-header/app-header';
 import AppIntro from '../app-intro/app-intro';
+import AppAbout from '../app-about/app-about';
+import AppBest from '../app-best/app-best';
+import AppFooter from '../app-footer/app-footer';
 import SearchPanel from '../search-panel/search-panel';
 import AppFilter from '../app-filter/app-filter';
 import EmployeesList from '../employees-list/employees-list';
@@ -19,7 +22,12 @@ class App extends Component {
         {name: 'Julia', salary: 8000, increase: false, rise: false, id: 3}
       ],
       term: '',
-      filter: 'all'
+      filter: 'all',
+      dataCoffee: [
+        {title: 'Solimo Coffee Beans 2 kg', price: 10.73, imgUrl: "../img/c1.png", id: 1},
+        {title: 'Presto Coffee Beans 1 kg', price: 15.99, imgUrl: "../img/c2.png", id: 2,},
+        {title: 'AROMISTICO Coffee 1 kg', price: 6.99, imgUrl: "../img/c3.png", id: 3}
+      ],
     }
 
     this.maxId = 4;
@@ -97,13 +105,17 @@ class App extends Component {
   }
 
 
+
   render(){
-    const{data, term, filter} = this.state;
+    const{data, term, filter, dataCoffee} = this.state;
     const visibleData = this.filterPost(this.searchEmp(data, term), filter);
     return (
       <div className="app">
           <AppHeader/>
           <AppIntro/>
+          <AppAbout/>
+          <AppBest dataCoffee={dataCoffee} />
+          <AppFooter/>
 
           <div className="search-panel">
               <SearchPanel onUpdateSearch={this.onUpdateSearch}/>

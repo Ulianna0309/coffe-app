@@ -1,0 +1,30 @@
+@import '../../main-styles/vars.scss';
+@import '../../main-styles/mixins.scss';
+
+.about {
+   margin: 40px 0;
+
+   @media (min-width: $media-tab-md) {
+    margin: 80px 0;
+}
+
+
+   &__title{
+    @include flexible-font-size(20, 24);
+    line-height: 120%;
+    margin-bottom: 0;
+
+   }
+
+   &__text{
+    @include flexible-font-size(12, 14);
+    max-width: 589px;
+    margin: 0 auto 20px;
+   }
+
+   .ps{
+       hr{
+        color: $black;
+       }
+   }
+}
