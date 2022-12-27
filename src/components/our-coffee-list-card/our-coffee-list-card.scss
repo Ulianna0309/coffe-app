@@ -1,67 +1,37 @@
 @import "../../main-styles/vars.scss";
 
-.list-group-item {
-    padding: 15px 20px;
-    border-bottom: 1px solid $dark;
-}
+@import '../../main-styles/vars.scss';
+@import '../../main-styles/mixins.scss';
 
-.list-group-item:last-child {
-    border-bottom: none;
-}
+.our-coffee__cards{
+    padding: 0;
+    .card{
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+        width: 240px;
+        padding: 40px 23px 22px 23px;
+        margin: 30px 0;
 
-.list-group-item span {
-    line-height: 35px;
-    font-size: 20px;
-    cursor: pointer;
-    max-width: 550px;
-}
+        &-img-top{
+            max-height: 115px;
+        }
 
-.list-group-item input {
-    line-height: 35px;
-    font-size: 20px;
-    text-align: center;
-    border: 0;
-}
+        &-body{
+            padding: 0;
+        }
 
-.list-group-item button {
-    width: 35px;
-    height: 35px;
-    margin: 3px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
+        &-title{
+            @include flexible-font-size(12, 14);
+            margin-top: 14px;
+        }
 
-.list-group-item .btn-cookie {
-    color: $orange;
-}
+        &-text{
+            @include flexible-font-size(12, 14);
+            margin: 14px 0;
+            text-align: right;
 
-.list-group-item .btn-trash {
-    color: $red;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+      }
 }
-
-.list-group-item .fa-star {
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    font-size: 16px;
-    color: $yellow;
-    transition: all $fast-animation;
-    transform: translateX(30px);
-    opacity: 0;
-}
-
-.list-group-item.like .fa-star {
-    opacity: 1;
-    transform: translateX(0px);
-}
-
-.list-group-item.increase .list-group-item-label, .list-group-item.increase .list-group-item-input {
-    color: $orange;
-}
-  
-.list-group-item.increase .btn-star {
-    color: $gray;
-}
-  

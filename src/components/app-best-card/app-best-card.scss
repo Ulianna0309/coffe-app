@@ -1,67 +1,41 @@
 @import "../../main-styles/vars.scss";
+@import '../../main-styles/mixins.scss';
 
-.list-group-item {
-    padding: 15px 20px;
-    border-bottom: 1px solid $dark;
+.best{
+    &__cards{
+        max-width: 800px;
+        margin: 40px auto 0;
+ 
+        .card{
+            padding: 24px 20px;
+            background: rgba(255, 255, 255, 0.65);
+            border-radius: 8px;
+            width: 230px;
+            margin: 0 auto 20px;
+ 
+            @media (min-width: $media-tab-md) {
+              margin: 0;
+            }
+ 
+            &-img-top{
+                height: 130px;
+                max-width: 150px;
+                margin: 0 auto;
+            }
+ 
+            &-title{
+              @include flexible-font-size(12, 14);
+            }
+ 
+             &-body{
+                 padding: 14px 0 0 0;
+             }
+ 
+             &-text{
+              @include flexible-font-size(12, 14);
+              font-weight: 700;
+              text-align: right;
+            }
+        }
+    }
 }
-
-.list-group-item:last-child {
-    border-bottom: none;
-}
-
-.list-group-item span {
-    line-height: 35px;
-    font-size: 20px;
-    cursor: pointer;
-    max-width: 550px;
-}
-
-.list-group-item input {
-    line-height: 35px;
-    font-size: 20px;
-    text-align: center;
-    border: 0;
-}
-
-.list-group-item button {
-    width: 35px;
-    height: 35px;
-    margin: 3px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.list-group-item .btn-cookie {
-    color: $orange;
-}
-
-.list-group-item .btn-trash {
-    color: $red;
-}
-
-.list-group-item .fa-star {
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    font-size: 16px;
-    color: $yellow;
-    transition: all $fast-animation;
-    transform: translateX(30px);
-    opacity: 0;
-}
-
-.list-group-item.like .fa-star {
-    opacity: 1;
-    transform: translateX(0px);
-}
-
-.list-group-item.increase .list-group-item-label, .list-group-item.increase .list-group-item-input {
-    color: $orange;
-}
-  
-.list-group-item.increase .btn-star {
-    color: $gray;
-}
-  

@@ -1,9 +1,7 @@
 @import "../../main-styles/vars.scss";
 
-.app-list {
-    margin-top: 30px;
-    background-color: $dark;
-    border-radius: 4px;
-    box-shadow: 15px 15px 30px rgba(0,0,0, .15);
-    color: $white;
+.our-coffee__cards {
+    margin: 30px auto 0;
+    max-width: 950px;
+    flex-wrap: wrap;
 }

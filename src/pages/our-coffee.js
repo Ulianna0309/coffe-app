@@ -22,9 +22,12 @@ class OurCoffee extends Component {
       },
 
       data: [
-        {title: 'AROMISTICO Coffee 1 kg', category: "Brazil", price: 6.99, imgUrl: "../img/c1.png", id: 1},
-        {title: 'Presto Coffee Beans 1 kg', category: "Kenya", price: 15.99, imgUrl: "../img/c2.png", id: 2,},
-        {title: 'AROMISTICO Coffee 1 kg', category: "Columbia", price: 6.99, imgUrl: "../img/c3.png", id: 3}
+        {title: 'AROMISTICO Coffee 1 kg', category: "Brazil", price: 6.99, imgUrl: "../img/our-card-card.png", id: 1},
+        {title: 'Presto Coffee Beans 1 kg', category: "Kenya", price: 15.99, imgUrl: "../img/our-card-card.png", id: 2,},
+        {title: 'AROMISTICO Coffee 1 kg', category: "Columbia", price: 6.99, imgUrl: "../img/our-card-card.png", id: 3},
+        {title: 'AROMISTICO Coffee 1 kg', category: "Kenya", price: 6.99, imgUrl: "../img/our-card-card.png", id: 4},
+        {title: 'AROMISTICO Coffee 1 kg', category: "Kenya", price: 6.99, imgUrl: "../img/our-card-card.png", id: 5},
+        {title: 'AROMISTICO Coffee 1 kg', category: "Brazil", price: 6.99, imgUrl: "../img/our-card-card.png", id: 6}
       ],
      
       term: '',

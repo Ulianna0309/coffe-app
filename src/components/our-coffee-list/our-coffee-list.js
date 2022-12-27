@@ -17,7 +17,7 @@ const OurCoffeeList = ({data, onDelete, onToggleProp}) => {
     })
 
     return (
-        <ul className="our-coffee__cards container d-flex justify-content-between">
+        <ul className="our-coffee__cards d-flex justify-content-between">
             {elements}
         </ul>
     )
