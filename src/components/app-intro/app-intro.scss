@@ -2,10 +2,8 @@
 @import '../../main-styles/mixins.scss';
 
 .intro {
-    background: url(../../img/main.png) no-repeat;
     background-size: cover;
     color: $white;
-    height: 640px;
 
    &__title{
     @include flexible-font-size(28, 40);
@@ -47,5 +45,13 @@
     hr{
      color: $white;
      width: 60px;
+    }
+}
+
+.our-coffee-page{
+    .intro {
+       &__subtitle, .ps, &__btn{
+           display: none !important;
+       }
     }
 }

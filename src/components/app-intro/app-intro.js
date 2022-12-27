@@ -1,11 +1,14 @@
 import "./app-intro.scss";
 
 
-const AppIntro = () => {
+const AppIntro = (props) => {
+    const {titleIntro, subtitleIntro, subtitleIntroAsk, style, btn} = props;
+    
+    
     return (
-        <div className="intro text-center d-flex flex-column justify-content-center">
+        <div className="intro text-center d-flex flex-column justify-content-center" style={style}>
             <div className="container">
-                <h1 className="intro__title">Everything You Love About Coffee</h1>
+                <h1 className="intro__title">{titleIntro}</h1>
                 <div className="ps d-flex justify-content-center">
                 <hr/>
                 <img
@@ -17,9 +20,9 @@ const AppIntro = () => {
                         />
                 <hr/>
                 </div>
-                <p className="intro__subtitle">We makes every day full of energy and taste</p>
-                <p className="intro__subtitle">Want to try our beans?</p>
-                <button type="submit" className="btn btn-outline-light intro__btn">More</button>
+                <p className="intro__subtitle">{subtitleIntro}</p>
+                <p className="intro__subtitle">{subtitleIntroAsk}</p>
+                <button type="submit" className="btn btn-outline-light intro__btn">{btn}</button>
             </div>
         </div>
     )

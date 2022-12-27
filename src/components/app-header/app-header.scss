@@ -34,8 +34,8 @@
             height: 35px;
         }
 
-        &:hover, &:focus {
-            color: $white;
+        &:hover, &:focus, &.active {
+            color: $white !important;
             text-decoration: underline;
         }
     }

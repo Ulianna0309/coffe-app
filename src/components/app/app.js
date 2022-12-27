@@ -1,15 +1,21 @@
 import { Component } from 'react';
-import AppHeader from '../app-header/app-header';
-import AppIntro from '../app-intro/app-intro';
-import AppAbout from '../app-about/app-about';
-import AppBest from '../app-best/app-best';
-import AppFooter from '../app-footer/app-footer';
-import SearchPanel from '../search-panel/search-panel';
-import AppFilter from '../app-filter/app-filter';
-import EmployeesList from '../employees-list/employees-list';
-import EmployeesAddForm from '../employees-add-form/employees-add-form';
+// import AppHeader from '../app-header/app-header';
+// import AppIntro from '../app-intro/app-intro';
+// import AppAbout from '../app-about/app-about';
+// import AppBest from '../app-best/app-best';
+// import AppFooter from '../app-footer/app-footer';
+// import SearchPanel from '../search-panel/search-panel';
+// import AppFilter from '../app-filter/app-filter';
+// import EmployeesList from '../employees-list/employees-list';
+// import EmployeesAddForm from '../employees-add-form/employees-add-form';
+
+import { BrowserRouter as Router, Route, Routes}
+    from 'react-router-dom';
+import OurCoffee from '../../pages/our-coffee';
+import Home from '../../pages/home'
 
 import './app.scss';
+
 
 class App extends Component {
 
@@ -23,11 +29,6 @@ class App extends Component {
       ],
       term: '',
       filter: 'all',
-      dataCoffee: [
-        {title: 'Solimo Coffee Beans 2 kg', price: 10.73, imgUrl: "../img/c1.png", id: 1},
-        {title: 'Presto Coffee Beans 1 kg', price: 15.99, imgUrl: "../img/c2.png", id: 2,},
-        {title: 'AROMISTICO Coffee 1 kg', price: 6.99, imgUrl: "../img/c3.png", id: 3}
-      ],
     }
 
     this.maxId = 4;
@@ -107,11 +108,11 @@ class App extends Component {
 
 
   render(){
-    const{data, term, filter, dataCoffee} = this.state;
-    const visibleData = this.filterPost(this.searchEmp(data, term), filter);
+    // const{data, term, filter} = this.state;
+    // const visibleData = this.filterPost(this.searchEmp(data, term), filter);
     return (
-      <div className="app">
-          <AppHeader/>
+      <>
+          {/* <AppHeader/>
           <AppIntro/>
           <AppAbout/>
           <AppBest dataCoffee={dataCoffee} />
@@ -126,8 +127,14 @@ class App extends Component {
           data={visibleData} 
           onDelete={this.deleteItem}
           onToggleProp={this.onToggleProp} />
-          <EmployeesAddForm onAdd={this.addItem}/>
-      </div>
+          <EmployeesAddForm onAdd={this.addItem}/> */}
+          <Router>
+                <Routes>
+                    <Route exact path="/" element={<Home/>} />
+                    <Route path="/our-coffee" element={<OurCoffee/>} />
+                </Routes>
+            </Router>
+      </>
     );
   }
 }

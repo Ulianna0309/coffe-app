@@ -4,13 +4,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
-
+ 
 const AppHeader = () => {
     return (
         <>
             <Navbar className="header">
                 <Container>
-                    <Navbar.Brand href="#home" className="d-flex align-items-end">
+                    <Navbar.Brand href="/" className="d-flex align-items-end">
                     <img
                         src="../img/coffee-beans.svg"
                         width="30"
@@ -20,11 +20,14 @@ const AppHeader = () => {
                         Coffee house
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home" className="d-flex align-items-end">Our coffee</Nav.Link>
-                        <Nav.Link href="#features" className="d-flex align-items-end">For your pleasure</Nav.Link>
+                        <Nav.Link href="our-coffee" className="d-flex align-items-end">
+                            Our coffee
+                        </Nav.Link>
+                        <Nav.Link href="pleasure" className="d-flex align-items-end">For your pleasure</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
+            
         </>
     )
 }
