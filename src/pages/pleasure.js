@@ -45,10 +45,6 @@ class Pleasure extends Component {
     })
   }
 
-  onUpdateSearch = (term) => {
-    this.setState({term});
-  }
-
   filterPost = (items, filter) => {
     switch (filter) {
       case 'Kenya': 
@@ -72,7 +68,7 @@ class Pleasure extends Component {
       <div className="our-coffee-page">
         <AppHeader/>
         <AppIntro style={style} className="our-coffee-intro" titleIntro="For your pleasure" subtitleIntro="" subtitleIntroAsk="" btn=""/>
-        <AppAbout aboutTitle="About our beans" aboutText="Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible."
+        <AppAbout aboutTitle="About our goods" aboutText="Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible."
                   aboutTextLast="Afraid at highly months do things on at. Situation recommend objection do intention
                   so questions. 
                   As greatly removed calling pleased improve an. Last ask him cold feel
