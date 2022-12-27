@@ -16,11 +16,14 @@ class SearchPanel extends Component {
     }
    render(){
         return (
-            <input type="text"
-                    className="form-control search-input"
-                    placeholder="Найти сотрудника"
-                    value={this.setState.term}
-                    onChange={this.onUpdateSearch}/>
+            <div className="search-panel__search d-flex">
+                <label htmlFor="" >Lookiing for</label>
+                <input type="text"
+                        className="form-control search-input"
+                        placeholder="start typing here..."
+                        value={this.setState.term}
+                        onChange={this.onUpdateSearch}/>
+            </div>
         )
     }
 }

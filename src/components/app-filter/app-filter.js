@@ -2,9 +2,9 @@ import "./app-filter.scss";
 
 const AppFilter = (props) => {
     const buttonsData = [
-        {name: 'all',label: 'Все сотрудники', colored: false},
-        {name: 'rise',label: 'На повышение', colored: false},
-        {name: 'moreThen1000',label: ' З/П больше 1000$', colored: false}
+        {name: 'all',label: 'Brazil', colored: false},
+        {name: 'Kenya',label: 'Kenya', colored: false},
+        {name: 'Columbia',label: ' Columbia', colored: false}
     ];
 
     const buttons = buttonsData.map(({name, label}) => {
