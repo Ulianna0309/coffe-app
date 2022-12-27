@@ -23,7 +23,8 @@ const AppFilter = (props) => {
     })
     
     return (
-        <div className="btn-group">
+        <div className="btn-group d-flex align-items-center">
+            <p className='btn-group__label'>Or filter</p>
             {buttons}
         </div>
     )

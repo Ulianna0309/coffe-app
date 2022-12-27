@@ -1,3 +1,27 @@
+@import '../../main-styles/vars.scss';
+@import '../../main-styles/mixins.scss';
+
+
 .btn-group {
-    margin-top: 20px;
+
+    &__label{
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+    .btn{
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 4px 0px 0px 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+        color: $black;
+        margin: 5px;
+
+        & :not(.btn-check:first-child) + .btn, .btn-group > .btn-group:not(:first-child) {
+            margin: 0 ;
+        }
+
+    }
 }

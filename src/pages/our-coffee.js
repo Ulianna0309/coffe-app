@@ -75,9 +75,9 @@ class OurCoffee extends Component {
                   As greatly removed calling pleased improve an. Last ask him cold feel
                   met spot shy want. Children me laughing we prospect answered followed. At it went
                   is song that held help face."/>
-            <div className="search-panel container">
+            <div className="search-panel">
                <hr/>
-               <div className="d-flex justify-content-between">
+               <div className="d-flex justify-content-between align-items-center">
                 <SearchPanel onUpdateSearch={this.onUpdateSearch}/>
                 <AppFilter filter={filter} onFilterSelect={this.onFilterSelect}/>
               </div>

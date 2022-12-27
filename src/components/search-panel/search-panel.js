@@ -16,8 +16,8 @@ class SearchPanel extends Component {
     }
    render(){
         return (
-            <div className="search-panel__search d-flex">
-                <label htmlFor="" >Lookiing for</label>
+            <div className="search-panel__search d-flex align-items-center">
+                <label htmlFor="" className="search-panel__search-label">Lookiing for</label>
                 <input type="text"
                         className="form-control search-input"
                         placeholder="start typing here..."
