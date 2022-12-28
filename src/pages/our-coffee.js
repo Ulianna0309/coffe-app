@@ -4,10 +4,10 @@ import AppHeader from '../components/app-header/app-header';
 import AppIntro from '../components/app-intro/app-intro';
 import AppAbout from '../components/app-about/app-about';
 import AppFooter from '../components/app-footer/app-footer';
-import OurCoffeeBg from '../img/our-coffee-bg.png';
 import AppFilter from '../components/app-filter/app-filter';
 import SearchPanel from '../components/search-panel/search-panel';
 import OurCoffeeList from '../components/our-coffee-list/our-coffee-list';
+import OurCoffeeBg from '../img/our-coffee-bg.png';
 
 
 
@@ -64,6 +64,7 @@ class OurCoffee extends Component {
     this.setState({filter});
   }
 
+
   render(){
     const{data, style, term, filter} = this.state;
     const visibleData = this.filterPost(this.searchEmp(data, term), filter);
@@ -72,7 +73,7 @@ class OurCoffee extends Component {
       <div className="our-coffee-page">
         <AppHeader/>
         <AppIntro style={style} className="our-coffee-intro" titleIntro="Our Coffee" subtitleIntro="" subtitleIntroAsk="" btn=""/>
-        <AppAbout aboutTitle="About our beans" aboutText="Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible."
+        <AppAbout imgUrl="../../img/about-img.png" aboutTitle="About our beans" aboutText="Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible."
                   aboutTextLast="Afraid at highly months do things on at. Situation recommend objection do intention
                   so questions. 
                   As greatly removed calling pleased improve an. Last ask him cold feel
@@ -89,7 +90,9 @@ class OurCoffee extends Component {
           data={visibleData} 
           onDelete={this.deleteItem}
           onToggleProp={this.onToggleProp} /> 
+
         <AppFooter/>
+        
       </div>
     );
   };

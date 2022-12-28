@@ -2,21 +2,20 @@ import React from 'react';
 import { Component } from 'react';
 import AppHeader from '../components/app-header/app-header';
 import AppIntro from '../components/app-intro/app-intro';
-import AppAbout from '../components/app-about/app-about';
+import ProductCard from '../components/product-card/product-card';
 import AppFooter from '../components/app-footer/app-footer';
-import OurCoffeeList from '../components/our-coffee-list/our-coffee-list';
-import PleasureBg from '../img/pleasure-bg.png';
+import OurCoffeeBg from '../img/our-coffee-bg.png';
 
 
 
-class Pleasure extends Component {
+class Product extends Component {
   constructor(props){
     super(props);
     this.state = {
       
       style: { 
           height: "260px", 
-          backgroundImage: `url(${PleasureBg})`,
+          backgroundImage: `url(${OurCoffeeBg})`,
       },
 
       data: [
@@ -27,33 +26,28 @@ class Pleasure extends Component {
         {title: 'AROMISTICO Coffee 1 kg', category: "Kenya", price: 6.99, imgUrl: "../img/our-card-card.png", id: 5},
         {title: 'AROMISTICO Coffee 1 kg', category: "Brazil", price: 6.99, imgUrl: "../img/our-card-card.png", id: 6}
       ],
+     
     }
   }
 
-  
+
 
   render(){
-    const{data, style} = this.state;
+    const{style} = this.state;
     
     return (
-      <div className="our-coffee-page">
+      <div className="our-coffee-page product-page">
         <AppHeader/>
-        <AppIntro style={style} className="our-coffee-intro" titleIntro="For your pleasure" subtitleIntro="" subtitleIntroAsk="" btn=""/>
-        <AppAbout imgUrl="../../img/pleasure.png" aboutTitle="About our goods" aboutText="Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible."
-                  aboutTextLast="Afraid at highly months do things on at. Situation recommend objection do intention
-                  so questions. 
-                  As greatly removed calling pleased improve an. Last ask him cold feel
-                  met spot shy want. Children me laughing we prospect answered followed. At it went
-                  is song that held help face."/>
-            
-          <OurCoffeeList
-          data={data} 
-          onDelete={this.deleteItem}
-          onToggleProp={this.onToggleProp} /> 
+        <AppIntro style={style} className="our-coffee-intro" titleIntro="Our Coffee" subtitleIntro="" subtitleIntroAsk="" btn=""/>
+        <ProductCard imgUrl="../../img/p1.png" aboutTitle="About it" country='Brazil' desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        price='16.99$'/>
+
         <AppFooter/>
+        
       </div>
     );
   };
 }
  
-export default Pleasure;
+export default Product;

@@ -2,11 +2,11 @@ import "./app-about.scss";
 
 
 const AppAbout = (props) => {
-    const {aboutText, aboutTextLast, aboutTitle} = props;
+    const {aboutText, aboutTextLast, aboutTitle, imgUrl} = props;
     return (
         <div className="about">
              <img
-                src="../img/about-img.png"
+                src={imgUrl}
                 alt="about__img"
                 className="about__img"
                 />

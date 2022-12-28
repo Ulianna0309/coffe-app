@@ -1,16 +1,6 @@
 import { Component } from 'react';
-// import AppHeader from '../app-header/app-header';
-// import AppIntro from '../app-intro/app-intro';
-// import AppAbout from '../app-about/app-about';
-// import AppBest from '../app-best/app-best';
-// import AppFooter from '../app-footer/app-footer';
-// import SearchPanel from '../search-panel/search-panel';
-// import AppFilter from '../app-filter/app-filter';
-// import EmployeesList from '../employees-list/employees-list';
-// import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
-import { BrowserRouter as Router, Route, Routes}
-    from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import OurCoffee from '../../pages/our-coffee';
 import Home from '../../pages/home';
 import Pleasure from '../../pages/pleasure';
@@ -109,26 +99,8 @@ class App extends Component {
 
 
   render(){
-    // const{data, term, filter} = this.state;
-    // const visibleData = this.filterPost(this.searchEmp(data, term), filter);
     return (
       <>
-          {/* <AppHeader/>
-          <AppIntro/>
-          <AppAbout/>
-          <AppBest dataCoffee={dataCoffee} />
-          <AppFooter/>
-
-          <div className="search-panel">
-              <SearchPanel onUpdateSearch={this.onUpdateSearch}/>
-              <AppFilter filter={filter} onFilterSelect={this.onFilterSelect}/>
-          </div>
-          
-          <EmployeesList 
-          data={visibleData} 
-          onDelete={this.deleteItem}
-          onToggleProp={this.onToggleProp} />
-          <EmployeesAddForm onAdd={this.addItem}/> */}
           <Router>
                 <Routes>
                     <Route exact path="/" element={<Home/>} />

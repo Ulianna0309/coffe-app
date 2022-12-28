@@ -11,7 +11,7 @@ const AppFooter = () => {
             <Navbar className="footer">
                 <Container className="d-flex flex-column justify-content-center">
                     <Nav className="auto">
-                        <Navbar.Brand href="#home" className="d-flex align-items-end">
+                        <Navbar.Brand href="/" className="d-flex align-items-end">
                         <img
                             src="../img/coffee-border.svg"
                             width="30"
@@ -20,8 +20,8 @@ const AppFooter = () => {
                             />
                             Coffee house
                         </Navbar.Brand>
-                        <Nav.Link href="#home" className="d-flex align-items-end">Our coffee</Nav.Link>
-                        <Nav.Link href="#features" className="d-flex align-items-end">For your pleasure</Nav.Link>
+                        <Nav.Link href="our-coffee" className="d-flex align-items-end">Our coffee</Nav.Link>
+                        <Nav.Link href="pleasure" className="d-flex align-items-end">For your pleasure</Nav.Link>
                     </Nav>
                     <div className="ps d-flex justify-content-center">
                         <hr/>
