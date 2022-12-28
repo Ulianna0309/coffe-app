@@ -4,16 +4,14 @@ import './our-coffee-list.scss';
 import OurCoffeeListCard from '../our-coffee-list-card/our-coffee-list-card';
 
 
-const OurCoffeeList = ({data, onDelete, onToggleProp}) => {
+const OurCoffeeList = ({data}) => {
 
     const elements = data.map(item => {
       const{id, ...itemProps} = item;
       return(
-          <OurCoffeeListCard
+          <OurCoffeeListCard 
           key={id} 
           {...itemProps}
-          onDelete={() => onDelete(id)}
-          onToggleProp={(e)=> onToggleProp(id, e.currentTarget.getAttribute('data-toggle'))}
           />
           
       )
