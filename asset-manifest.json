@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/coffe-app/static/css/main.8b462777.chunk.css",
+    "main.js": "/coffe-app/static/js/main.1f1087c2.chunk.js",
+    "main.js.map": "/coffe-app/static/js/main.1f1087c2.chunk.js.map",
+    "runtime-main.js": "/coffe-app/static/js/runtime-main.71a7f65f.js",
+    "runtime-main.js.map": "/coffe-app/static/js/runtime-main.71a7f65f.js.map",
+    "static/js/2.5f045ebf.chunk.js": "/coffe-app/static/js/2.5f045ebf.chunk.js",
+    "static/js/2.5f045ebf.chunk.js.map": "/coffe-app/static/js/2.5f045ebf.chunk.js.map",
+    "index.html": "/coffe-app/index.html",
+    "static/css/main.8b462777.chunk.css.map": "/coffe-app/static/css/main.8b462777.chunk.css.map",
+    "static/js/2.5f045ebf.chunk.js.LICENSE.txt": "/coffe-app/static/js/2.5f045ebf.chunk.js.LICENSE.txt",
+    "static/media/app-best.scss": "/coffe-app/static/media/best-bg.88c60209.png",
+    "static/media/main.802eed15.png": "/coffe-app/static/media/main.802eed15.png",
+    "static/media/our-coffee-bg.6bd5f774.png": "/coffe-app/static/media/our-coffee-bg.6bd5f774.png",
+    "static/media/pleasure-bg.5b9efd52.png": "/coffe-app/static/media/pleasure-bg.5b9efd52.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71a7f65f.js",
+    "static/js/2.5f045ebf.chunk.js",
+    "static/css/main.8b462777.chunk.css",
+    "static/js/main.1f1087c2.chunk.js"
+  ]
+}
