@@ -8,6 +8,8 @@ import AppFilter from '../components/app-filter/app-filter';
 import SearchPanel from '../components/search-panel/search-panel';
 import OurCoffeeList from '../components/our-coffee-list/our-coffee-list';
 import OurCoffeeBg from '../img/our-coffee-bg.png';
+import AboutCoffee from '../img/about-img.png';
+import CardImg from '../img/our-card-card.png';
 
 
 
@@ -73,7 +75,7 @@ class OurCoffee extends Component {
       <div className="our-coffee-page">
         <AppHeader/>
         <AppIntro style={style} className="our-coffee-intro" titleIntro="Our Coffee" subtitleIntro="" subtitleIntroAsk="" btn=""/>
-        <AppAbout imgUrl="../../img/about-img.png" aboutTitle="About our beans" aboutText="Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible."
+        <AppAbout imgUrl={AboutCoffee} aboutTitle="About our beans" aboutText="Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible."
                   aboutTextLast="Afraid at highly months do things on at. Situation recommend objection do intention
                   so questions. 
                   As greatly removed calling pleased improve an. Last ask him cold feel

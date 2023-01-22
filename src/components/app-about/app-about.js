@@ -1,4 +1,5 @@
 import "./app-about.scss";
+import coffeeBlack from '../../img/coffee-black.svg'
 
 
 const AppAbout = (props) => {
@@ -15,7 +16,7 @@ const AppAbout = (props) => {
                 <div className="ps d-flex justify-content-center">
                 <hr/>
                 <img
-                        src="../img/coffee-black.svg"
+                        src={coffeeBlack}
                         width="30"
                         height="30"
                         alt="logo"

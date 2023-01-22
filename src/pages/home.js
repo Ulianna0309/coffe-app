@@ -12,7 +12,7 @@ class Home extends Component {
     super(props);
     this.state = {
       dataCoffee: [
-        {title: 'Solimo Coffee Beans 2 kg', price: 10.73, imgUrl: "../img/c1.png", id: 1},
+        {title: 'Solimo Coffee Beans 2 kg', price: 10.73, imgUrl: "../../../img/c1.png", id: 1},
         {title: 'Presto Coffee Beans 1 kg', price: 15.99, imgUrl: "../img/c2.png", id: 2,},
         {title: 'AROMISTICO Coffee 1 kg', price: 6.99, imgUrl: "../img/c3.png", id: 3}
       ],

@@ -11,92 +11,6 @@ import './app.scss';
 
 class App extends Component {
 
-  constructor(props){
-    super(props);
-    this.state = {
-      data: [
-        {name: 'Jon', salary: 800, increase: true, rise: true, id: 1},
-        {name: 'Alex', salary: 1000, increase: false, rise: false, id: 2},
-        {name: 'Julia', salary: 8000, increase: false, rise: false, id: 3}
-      ],
-      term: '',
-      filter: 'all',
-    }
-
-    this.maxId = 4;
-  }
- 
-  deleteItem = (id) => {
-    this.setState(({data}) => {
-      // const index = data.findIndex(elem => elem.id === id)
-    
-      // const before = data.slice(0, index);
-      // const after = data.slice(index + 1);
-      // const newArr = [...before, ...after];
-
-      return {
-        data: data.filter(item => item.id !== id)
-      }
-    })
-  }
-
-  addItem = (name, salary) => {
-    const newItem = {
-        name, 
-        salary,
-        increase: false,
-        rise: false,
-        id: this.maxId++
-    }
-      this.setState(({data}) => {
-          const newArr = [...data, newItem];
-          return {
-              data: newArr
-          }
-      });
-  }
-
-  onToggleProp = (id, prop) => {
-
-    this.setState(({data}) => ({
-      data: data.map(item => {
-        if(item.id === id){
-          return {...item, [prop]: !item[prop]}
-        }
-        return item;
-      })
-    }))
-  }
-
-  searchEmp = (items, term) => {
-    if(term.length === 0){
-      return items;
-    }
-
-    return items.filter(item => {
-      return item.name.indexOf(term) > -1
-    })
-  }
-
-  onUpdateSearch = (term) => {
-    this.setState({term});
-  }
-
-  filterPost = (items, filter) => {
-    switch (filter) {
-      case 'rise': 
-        return items.filter(item => item.rise);
-      case 'moreThen1000':
-        return items.filter(item => item.salary > 1000);
-        default:
-          return items  
-    }
-  }
-
-  onFilterSelect =(filter) => {
-    this.setState({filter});
-  }
-
 
 
   render(){
@@ -108,7 +22,7 @@ class App extends Component {
                     <Route path="/our-coffee" element={<OurCoffee/>} />
                     <Route path="/pleasure" element={<Pleasure/>} />
 
-                    <Route path="/:id" element={ <Product />} />
+                    <Route path="/our-coffee/:id" element={ <Product />} />
                 </Routes>
             </Router>
       </>

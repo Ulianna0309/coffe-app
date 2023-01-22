@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import coffeeBeans from '../../img/coffee-beans.svg' 
+
 
  
 const AppHeader = () => {
@@ -11,8 +13,7 @@ const AppHeader = () => {
             <Navbar className="header">
                 <Container>
                     <Navbar.Brand href="/" className="d-flex align-items-end">
-                    <img
-                        src="../img/coffee-beans.svg"
+                    <img src={coffeeBeans}
                         width="30"
                         height="30"
                         alt="logo"
